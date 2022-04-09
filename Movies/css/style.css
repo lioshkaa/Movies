@@ -53,9 +53,9 @@ input{
   display: grid;
   gap: 8rem 0rem;
   grid-template-areas:
-  "my-header my-header"
-  "my-aside my-main"
-  "my-aside my-main";
+  "my-header my-header my-header"
+  "my-aside my-main my-main"
+  "my-aside my-main my-main";
   grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
 }
 .grid-init{
@@ -69,6 +69,7 @@ input{
 }
 .header_logo{
   font-size: 6.4rem;
+  font-weight: 700;
   margin-right: 7rem;
 }
 .header_nav a{
@@ -79,7 +80,7 @@ input{
   margin-right: 9.2rem;
 }
 .header_nav a:not(:last-child){
-  margin-right: 1.99rem;
+  margin-right: 1.8rem;
 }
 .header_find{
   width: 33rem;
@@ -117,6 +118,210 @@ input{
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
+}
+.main-display_trailer{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 98%;
+  padding: 1.9rem 0 1.9rem;
+  height:20.2rem;
+  border-radius: 1.6rem;
+  background:  url(../img/Spider.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main_display_views{
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 119%;
+}
+.main-display_header{
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 117%;
+}
+.main-display_date{
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 114%;
+}
+.button-play_wrap{
+  position: absolute;
+  width: 8.1rem;
+  height: 8.1rem;
+  background: rgba(255,255,255,0.07);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+
+}
+.button-play{
+  width: 0;
+  height: 0;
+  border-top: 1.5rem solid transparent;
+  border-left: 2.5rem solid #fff;
+  border-bottom:1.5rem solid transparent;
+  border-radius: .2rem;
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top:3.5rem;
+  padding-bottom: 3.5rem;
+  padding-right: 1rem;
+}
+.title_left,.title_right{
+  display: flex;
+  align-items: center;
+}
+.title_right span{
+  font-size: 1.4rem;
+  line-height: 114%;
+  color: rgba(255, 255, 255, 0.2);
+}
+.title_right img{
+  width: 2rem;
+  height: 1.6rem;
+  margin-left: .4rem;
+}
+.title_left{
+  font-size: 20px;
+  line-height: 115%;
+}
+.title_count{
+  font-size: 20px;
+  line-height: 115%;
+  margin-left: 2rem;
+  color:rgba(255,255,255,0.2);
+  padding-top: .3rem;
+}
+.trending_plash img{
+  width: 15px;
+  height: 15px;
+
+}
+.trending,.Popular{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1.6rem;
+}
+.tranding_item{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 47%;
+  height: 25.1rem;
+  border-radius: 1.6rem;
+  background: url(../img/luna.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tranding_header{
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+.tranding_date{
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
+}
+.tranding_footer,.popular_footer{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 1rem ;
+  border-radius: 1.6rem;
+  background: rgba(255,255,255,0.2);
+}
+.popular_footer{
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(16px);
+  padding: .8rem 1.9rem .8rem 6.4rem;
+}
+.tranding_time{
+ background: #fff;
+ border-radius: 1.6rem;
+ padding: .4rem 1.3rem;
+ font-size: 1.4rem;
+ line-height: 114%;
+ color: #000;
+}
+.trending_plash{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.4rem;
+  line-height: 114%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1.6rem;
+  padding: .4rem 1.3rem;
+}
+.small{
+  width: 5rem;
+  height: 5rem;
+  left: 7%;
+
+}
+.small-plus{
+  width: 3rem;
+  height: 3rem;
+  left: 10%;
+}
+.button-play_wrap.small .button-play{
+width: 0;
+height: 0;
+border-top: 1rem solid transparent;
+border-left: 1.5rem solid #fff;
+border-bottom:1rem solid transparent;
+border-radius: .2rem;
+}
+.button-play_wrap.small-plus .button-play{
+  width: 0;
+  height: 0;
+  border-top: .5rem solid transparent;
+  border-left: 1rem solid #fff;
+  border-bottom:.5rem solid transparent;
+  border-radius: .2rem;
+  }
+.popular_item{
+  display: flex;
+  align-items: flex-end;
+  width: 30%;
+  height: 19.2rem;
+  border-radius: 1.6rem;
+  background: url(../img/unsplash_11SgH7U6TmI.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.popular_header{
+  font-size: 1rem;
+  line-height: 120%;
+}
+.popular_date{
+  font-weight: 700;
+  font-size: .8rem;
+  line-height: 113%;
+}
+.popular_rating{
+  display: flex;
+  align-items: center;
+}
+.popular_rating span{
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
 }
 @media(max-width:105em){
   html{
